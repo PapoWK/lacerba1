@@ -1,0 +1,208 @@
+/**** GENERAL *****/
+a {
+  text-decoration: none;
+  color: #002358;
+}
+
+.container {
+  max-width:1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+}
+
+  .clearfix::after {
+  content:"";
+  clear: both;
+  display: table;
+  }
+
+main {
+  padding-top: 120px;
+}
+
+
+/**** HEADER *****/
+header {
+	padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+
+.logo-container {
+	text-align: center;
+	height: 64px;
+	max-height: auto;
+	width: auto;
+	background:linear-gradient(to right, white 1% , #002358 50%, white 99%);
+}
+
+.mylogo{
+	height: 64px;
+	max-height: 100%;
+	width: auto;
+}
+
+.navbar li a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0px 20px;
+  font-size: 1.2em;
+  color: #002358;
+}
+
+.navbar {
+  text-align: center;
+  border-bottom: solid 2px;
+  color: #002358;
+  background-color: white;
+  margin
+}
+
+  .navbar ul li{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar ul li:hover > ul,
+.drop  ul:hover {
+  visibility: visible;
+  transition: visibility  5s;
+  opacity: 1;
+  display: block;
+  float: left;
+  padding: 0;
+  }
+
+.drop ul{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  text-align: left;
+  ;
+}
+
+.navbar ul li ul li {
+  display: block;
+  position: relative;
+  text-align: left;
+  padding: 15px 0;
+  background-color: #EAE6E5;
+  border: solid 1px;
+  border-radius: 3%;
+}
+
+
+/****** INTRO PIC ******/
+#intro-pic .container {
+  display: flex;
+  height: 400px;
+  width: 50%;
+  flex-grow: 1;
+}
+
+#intro-pic .item2 {
+  order:2;  
+}
+
+#intro-pic h1 {
+  margin: 0;
+}
+
+/***** CLASS PRODUCTS ******/
+#classproduct img {
+  width: 100%;
+}
+
+#classproduct {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#classproduct .item{
+  width: 50%;
+  box-sizing: border-box; 
+  float: left;
+  /* height: 500px; */
+  padding: 2.5% 2.5%;
+}
+  
+#classproduct .item:nth-child(2n+1) {
+  clear: left;
+}
+
+#classproduct .picture:hover {
+  opacity: 70%;
+}
+
+/***** FOOTER *****/
+
+#mainfooter {
+  background-color: #002378;
+  
+}
+
+#page-footer .item{
+  width: 33.3333%;
+  box-sizing: border-box;
+  float: left;
+  font-size: 1em;
+  text-align: left;
+}
+
+#page-footer p{
+  margin: 0% 0% 0% 2.5%;
+  color: white;
+}
+
+#page-footer a{
+  margin: 0% 2.5%;
+  color: white;
+}
+
+#mainfooter .item {
+  float: left;
+}
+
+#mainfooter .item .social-icon{
+  margin-top: 5%;
+}
+
+#mainfooter .item .social-icon a:hover {
+  color: orange;
+}
+
+
+/**** MEDIA QUERIES *****/
+
+@media only screen and (max-width: 767px) {
+ 
+ #page-footer .item{
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 962px) {
+
+.container {
+  max-width: 1200px;
+
+
+}
+
+}
